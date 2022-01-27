@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Podkova&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../fontawesome-free-5.15.4-web/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="../employee managment/image/c2.jpg">
+
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Employee-List</title>
+
+
+</head>
+
+
+<body>
+  <main class="main-container">
+    <article>
+      <div class="mysidenav">
+        <span class="closebtn"><i class="fas fa-times"></i></span>
+        <div style="text-align: center;">
+            <img src="./../image/c2.jpg" alt="">
+            <div>
+                <h1>Minal Pandit</h1>
+            </div>
+        </div>
+
+        <nav>
+            <div class="nav">
+                <div onclick="myFunction()" class="dropdown-btn "><i
+                        class="fas fa-user-friends"></i>Employee
+                    <i class="fa fa-caret-down"></i>
+                </div>
+                <div id="myDIV" class="dropdown-container">
+                    <a href="./index.html">Employee-List</a>
+                    <a href="#">Employee-Home</a>
+                    <a href="#">Employee-Leave</a>
+                    <a href="#">Employee-Holiday</a>
+
+                </div>
+                <div onclick="myFunctions()" class="dropdown-btn nav__link"><i
+                        class="fas fa-user-friends"></i>User
+                    <i class="fa fa-caret-down"></i>
+                </div>
+                <div id="myDIVs" class="dropdown-container">
+                    <a href="./../user-list.html">User-List</a>
+                    <a href="#">User-Home</a>
+                    <a href="#">User-leave</a>
+                    <a href="#">User-Holiday</a>
+
+                </div>
+                
+
+                
+                    <a href="./leavereq.html">leave</a>
+                
+
+               
+                    <a href="/holidayreq.html">holiday</a>
+                
+
+
+            </div>
+        </nav>
+
+
+
+    </div>
+    <div class="iconImage" id="main">
+      <span style="font-size:30px;cursor:pointer">&#9776;</span>
+      <div class="imgContainer" onclick="openForm()">
+
+          <!-- <img src="./image/Screenshot_4.png" width="100%"  alt="" srcset=""> -->
+          <i class="fas fa-user-tie"></i>
+      </div>
+
+  </div>
+
+      <div class="side-body">
+        <!-- <div class="iconImage" id="main">
+          <span style="font-size:30px;cursor:pointer">&#9776;</span>
+          <div class="imgContainer" onclick="openForm()">
+            <img src="../image/c2.jpg" alt="">
+          </div>
+
+        </div> -->
+
+
+        <div class="form-popup" id="myForm">
+          <form class="form-container">
+              <!-- <div style="display: flex; justify-content: flex-end; padding: 2px;">
+                  <button type="button" class="btn cancel" onclick="closeForm()"><i
+                          class="far fa-times-circle"></i></button>
+                 
+
+              </div> -->
+
+              <div class="side-body-logout-section">
+             
+                  <h1>Minal Pandit</h1>
+                  <p>meenalme1@gmail.com</p>
+                 <button>Change Password</button><br>
+                  <button>Log out</button>
+              
+             
+          </div>
+          </form>
+      </div>
+      </div>
+    </article>
+  </main>
+
+</body>
+
+<script src="../employee.js"></script>
+
+
+</html

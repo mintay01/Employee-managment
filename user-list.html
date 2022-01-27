@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Podkova&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="../employee managment/image/c2.jpg">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>User-List</title>
+
+
+</head>
+
+
+<body>
+    <main class="main-container">
+        <article>
+            <div class="mysidenav">
+                <span class="closebtn"><i class="fas fa-times"></i></span>
+                <div style="text-align: center;">
+                    <img src="./image/c2.jpg" alt="">
+                    <div>
+                        <h1>Minal Pandit</h1>
+                    </div>
+                </div>
+
+                <nav>
+                    <div class="nav">
+                        <div onclick="myFunction()" class="dropdown-btn "><i
+                                class="fas fa-user-friends"></i>Employee
+                            <i class="fa fa-caret-down"></i>
+                        </div>
+                        <div id="myDIV" class="dropdown-container">
+                            <a href="employee.html">Employee-List</a>
+                            <a href="#">Employee-Home</a>
+                            <a href="#">Employee-Leave</a>
+                            <a href="#">Employee-Holiday</a>
+
+                        </div>
+                        <div onclick="myFunctions()" class="dropdown-btn nav__link"><i
+                                class="fas fa-user-friends"></i>User
+                            <i class="fa fa-caret-down"></i>
+                        </div>
+                        <div id="myDIVs" class="dropdown-container">
+                            <a href="./user-list.html">User-List</a>
+                            <a href="#">User-Home</a>
+                            <a href="#">User-leave</a>
+                            <a href="#">User-Holiday</a>
+
+                        </div>
+                        
+
+                        
+                            <a href="./leavereq.html">leave</a>
+                        
+
+                       
+                            <a href="/holidayreq.html">holiday</a>
+                        
+
+
+                    </div>
+                </nav>
+
+
+
+            </div>
+        </article>
+
+        <div class="side-body">
+            <div class="iconImage" id="main">
+                <span style="font-size:30px;cursor:pointer">&#9776;</span>
+                <div class="imgContainer" onclick="openForm()">
+
+                    <!-- <img src="./image/Screenshot_4.png" width="100%"  alt="" srcset=""> -->
+                    <i class="fas fa-user-tie"></i>
+                </div>
+
+            </div>
+
+
+            <div class="form-popup" id="myForm">
+                <form class="form-container">
+                    <div style="display: flex; justify-content: flex-end;">
+                        <button type="button" class="btn cancel" onclick="closeForm()"><i
+                                class="far fa-times-circle"></i></button>
+                             
+
+                    </div>
+                    <div class="side-body-logout-section">
+                       
+                           <span>
+                            <i class="fas fa-user-circle"></i>
+                            <h1>Minal Pandit</h1>
+                           </span> 
+                           <span>
+                            <i class="fas fa-envelope"></i>
+                            <p>meenalme1@gmail.com</p>
+                           </span>
+                           <span>
+                           
+                            <button> <i class="fas fa-pen"></i>Change Password</button>
+                           </span>
+                           <span>
+                           
+                            <button>  <i class="fas fa-power-off"></i>Log out</button>
+                           </span>
+                            
+                        
+                       
+                    </div>
+                  
+                   
+                </form>
+            </div>
+
+
+            <article>
+                <div class="user-employee-header">
+                    <h2>
+                        User-List
+                    </h2>
+                </div>
+                <div class="text-icon">
+                    <div class="text">
+                        <button id="myBtn">Add User <i class="fas fa-user-plus"></i></button>
+
+                    </div>
+                    <div id="myModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="user-modal-content">
+                            <div class="user-modal-header">
+                                <span class="close">&times;</span>
+                                <h2>New User</h2>
+                                <p>Enter Information About User</p>
+                            </div>
+                            <div class="user-modal-body">
+                                <form id="userAdd" name="user-add-form" class="form-content">
+                                    <div class=" userForm-name-details">
+                                        <label for="user">Users</label>
+                                        <select id="designation" name="designation">
+                                            <option style="display: none;" value=""></option>
+                                            <option value="frontend-developer">Front-end Developer</option>
+                                            <option value="backend-developer">Backend-Developer</option>
+                                            <option value=".net-developer">.Net Developer</option>
+                                            <option value="flutter-developer">Flutter-Developer</option>
+
+                                        </select>
+                                        <div class="add-name">
+                                            <label for="fname">User Name</label>
+                                            <input type="text" id="fname" name="fname" required />
+                                        </div>
+                                        <div class="add-name">
+                                            <label for="password">Password</label>
+                                            <input type="Password" id="myInput" name="pw" required />
+                                            <input type="checkbox" onclick="myPass()"><span>Show Password</span>
+                                        </div>
+                                        <div class="add-name">
+                                            <label for="password">Confirm Password</label>
+                                            <input type="Password" id="myInputs" name="pw1" required />
+                                            <input type="checkbox" onclick="myWord()"><span>Show Password</span>
+                                        </div>
+
+
+
+                                    </div>
+
+
+
+
+                                    <div>
+                                        <div class="submit-btn modal-footer">
+                                            <button id="formSubmit" type="button">Submit</button>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+
+
+
+                        </div>
+
+
+                    </div>
+                    <!--  -->
+                    <div class="search-container">
+                        <input class="search" type="Search" placeholder="Search User">
+                        <div class="iconSearch">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </article>
+            <article>
+                <table id="customers">
+                    <tr>
+                        <th style="border-bottom: 2px solid black;" width: 10%; ">S no.</th>
+                            <th style=" border-bottom: 2px solid black; ">Name</th>
+                            <th style=" border-bottom: 2px solid black; " class=" mail ">Email</th>
+                            <th style=" border-bottom: 2px solid black; " class=" address ">
+                                Address
+                            </th>
+                            <th style=" border-bottom: 2px solid black; " class=" phone ">Phone</th>
+                            <th style=" border-bottom: 2px solid black; ">Action</th>
+                     </tr>
+
+                        <tr>
+                            <td>1.</td>
+                            <td>Minal Pandit</td>
+                            <td class=" mail ">Meenalme1@gmail.com</td>
+                            <td class=" address ">Sitapaila</td>
+                            <td class=" phone ">9864374050</td>
+                            <td>
+                                <i class=" fas fa-trash-alt "></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Minal Pandit</td>
+                            <td class=" mail ">Meenalme1@gmail.com</td>
+                            <td class=" address "> Sitapaila</td>
+                            <td class=" phone ">9864374050</td>
+                            <td>
+                                <i class=" fas fa-trash-alt "></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Minal Pandit</td>
+                            <td class=" mail ">Meenalme1@gmail.com</td>
+                            <td class=" address ">Sitapaila</td>
+                            <td class=" phone ">9864374050</td>
+                            <td>
+                                <i class=" fas fa-trash-alt "></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Minal Pandit</td>
+                            <td class=" mail ">Meenalme1@gmail.com</td>
+                            <td class=" address ">Sitapaila</td>
+                            <td class=" phone ">9864374050</td>
+                            <td>
+                                <i class=" fas fa-trash-alt "></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Minal Pandit</td>
+                            <td class=" mail ">Meenalme1@gmail.com</td>
+                            <td class=" address ">Sitapaila</td>
+                            <td class=" phone ">9864374050</td>
+                            <td>
+                                <i class=" fas fa-trash-alt "></i></td>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td >Minal Pandit</td>
+                            <td class=" mail ">Meenalme1@gmail.com</td>
+                            <td  class=" address ">Sitapaila</td>
+                            <td class=" phone ">9864374050</td>
+                            <td>
+                                <i class=" fas fa-trash-alt "></i></td>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td >Minal Pandit</td>
+                            <td class=" mail ">Meenalme1@gmail.com</td>
+                            <td  class=" address ">Sitapaila</td>
+                            <td class=" phone ">9864374050</td>
+                            <td>
+                                <i class=" fas fa-trash-alt "></i></td>
+                        </tr>
+                    </table>
+
+
+                         <div class=" nextPage ">
+                            <a href=" #">1</a>
+                            <a href=" # ">2</a>
+                            <a href="#">3</a>
+                            <button>Next Page</button>
+        </div>
+
+        </article>
+        </div>
+        </div>
+
+
+
+
+    </main>
+    <script src="./employee.js"></script>
+
+</body>
+
+</html>
